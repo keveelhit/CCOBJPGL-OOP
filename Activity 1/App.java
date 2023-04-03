@@ -47,7 +47,6 @@ public class App {
             String password = passInput.getText();
             String username = userInput.getText();  
 
-
             if(username.equals("Fwessa") && password.equals("120603")){
                 JOptionPane.showMessageDialog(frame, "Login Successful");
                 window1.dispose();
@@ -55,7 +54,7 @@ public class App {
 
             } else if(username.equals("") && password.equals("") ){
 
-                JOptionPane.showMessageDialog(frame, "Username and Password Required");
+                JOptionPane.showMessageDialog(frame, "Username and Password Required!");
             } else{
                 JOptionPane.showMessageDialog(frame, "Incorrect Username and Password");
             }
@@ -80,12 +79,51 @@ public class App {
     public static void studProf(){
         JFrame window2 = new JFrame("Student Profile");
 
+        ImageIcon pic = new ImageIcon("luisa.jpg");
+        JLabel profilePic = new JLabel();
+        profilePic.setIcon(pic);
+        profilePic.setBounds(140, 80, 200, 199);
 
-        window2.setBounds(0, 0, 300, 200);
+
+        JLabel nameText = new JLabel("Karen Pearl V. Pabilando");
+        nameText.setBounds(178, 300, 150, 25);
+        nameText.setFont(new Font("Roboto",Font.BOLD, 20));
+
+
+        JLabel birthDate = new JLabel();
+        JLabel birthDate_input = new JLabel();
+        JLabel hobbies = new JLabel();
+        JLabel hobbiesText = new JLabel();
+        JLabel talent = new JLabel();
+        JLabel talentText = new JLabel();
+        JLabel achievement = new JLabel();
+        JLabel achievementText = new JLabel();
+        JLabel strengths = new JLabel();
+        JLabel strengthsText = new JLabel();
+        JLabel weakness = new JLabel();
+        JLabel weaknessText = new JLabel();
+        JLabel course = new JLabel();
+        JTextPane whyCourse = new JTextPane();
+
+
+
+
+        // add
+        window2.add(profilePic);
+        window2.add(nameText);
+
+
+
+
+
+
+        window2.setBounds(0, 0, 500, 700);
         window2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window2.setLocationRelativeTo(null);
         window2.setLayout(null);
         window2.setVisible(true);
+
+
 
     }
 
@@ -95,7 +133,6 @@ public class App {
         logIn();
 
     }
-
 
     
 }
