@@ -1,4 +1,5 @@
 package BasicElectronicBookRentalSystem;
+
 import java.util.Scanner;
 
 public class BookRentalSystem {
@@ -36,11 +37,13 @@ public class BookRentalSystem {
 						System.out.print("Would you like to rent another book? [Y/N]: ");
 						String rentAgain = input.next();
 						
-						if(rentAgain == "N" || rentAgain == "n"){
-							System.out.println("System Transaction End.");
-						}else if (rentAgain == "Y" || rentAgain == "y"){
-							System.out.println("Reset the System.");
-						} 
+							if(rentAgain.equalsIgnoreCase("N")){
+								System.out.println();
+								System.out.println("End of System Transaction.");
+							}else if (rentAgain.equalsIgnoreCase("Y")){
+								System.out.println();
+								System.out.println("Reset the System.");
+							}
 						break;
 			
 				case 2:
@@ -49,11 +52,13 @@ public class BookRentalSystem {
 						System.out.println();
 						System.out.print("Would you like to rent another book? [Y/N]: ");
 						String rentAgain1 = input.next();
-							if(rentAgain1 == "N" || rentAgain1 == "n"){
-								System.out.println("System Transaction End.");
-							}else if (rentAgain1 == "Y" || rentAgain1 == "y"){
+							if(rentAgain1.equalsIgnoreCase("N")){
+								System.out.println();
+								System.out.println("End of System Transaction.");
+							}else if (rentAgain1.equalsIgnoreCase("Y")){
+								System.out.println();
 								System.out.println("Reset the System.");
-							} 
+							}
 						break;
 					
 				case 3:
@@ -62,9 +67,11 @@ public class BookRentalSystem {
 						System.out.println();
 						System.out.print("Would you like to rent another book? [Yes/No]: ");
 						String rentAgain2 = input.next();
-							if(rentAgain2 == "N" || rentAgain2 == "n"){
-								System.out.println("System Transaction End.");
-							}else if (rentAgain2 == "Y" || rentAgain2 == "y"){
+							if(rentAgain2.equalsIgnoreCase("N")){
+								System.out.println();
+								System.out.println("End of System Transaction.");
+							}else if (rentAgain2.equalsIgnoreCase("Y")){
+								System.out.println();
 								System.out.println("Reset the System.");
 							}
 						break;
@@ -74,9 +81,11 @@ public class BookRentalSystem {
 						System.out.println();
 						System.out.print("Would you like to rent another book? [Yes/No]: ");
 						String rentAgain3 = input.next();
-							if(rentAgain3 == "N" || rentAgain3 == "n"){
-								System.out.println("System Transaction End.");
-							}else if (rentAgain3 == "Y" || rentAgain3 == "y"){
+							if(rentAgain3.equalsIgnoreCase("N")){
+								System.out.println();
+								System.out.println("End of System Transaction.");
+							}else if (rentAgain3.equalsIgnoreCase("Y")){
+								System.out.println();
 								System.out.println("Reset the System.");
 							}
 						break;
