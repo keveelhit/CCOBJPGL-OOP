@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+
 public class LibrarySystem {
 
 	public static void LoginModule() {
@@ -206,9 +207,85 @@ public class LibrarySystem {
 	
 	public static void adminModule() {
 		
+		JFrame adminModuleFrame = new JFrame("Admin Module");
+		JPanel adminModulePanel = new JPanel();
+		JLabel adminModuleText = new JLabel("Welcom to NU Library System");
+		
+		adminModulePanel.setLayout(null);
+		adminModulePanel.add(adminModuleText);
+		
+		adminModuleText.setBounds(100, 100, 200, 40);
+		adminModuleText.setLayout(null);
+		adminModuleText.setFont(new Font("Roboto", Font.BOLD, 12));
+		
+		adminModuleFrame.setLocation(400, 100);
+		adminModuleFrame.setSize(400, 300);
+		adminModuleFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		adminModuleFrame.setLayout(null);
+		adminModuleFrame.setVisible(true);
+		adminModuleFrame.add(adminModulePanel);
+		adminModuleFrame.add(adminModuleText);
 	}
 	
 	public static void librarianModule() {
+		
+		JFrame libModuleFrame = new JFrame("Librarian Module");
+		JPanel libModulePanel = new JPanel();
+		JLabel libModuleText = new JLabel("Electronic Book Rental System");
+		
+		libModuleText.setBounds(200, 30, 200, 40);
+		libModuleText.setLayout(null);
+		libModuleText.setFont(new Font("Roboto", Font.BOLD, 12));
+		
+		JLabel bookIndex1 = new JLabel("1.");
+		bookIndex1.setBounds(50, 95, 80, 25);
+		JLabel bookIndex2 = new JLabel("2.");
+		bookIndex2.setBounds(50, 120, 80, 25);
+		JLabel bookIndex3 = new JLabel("3.");
+		bookIndex3.setBounds(50, 145, 80, 25);
+		
+		JLabel bookTitle1 = new JLabel("The Song of Achilles");
+		bookTitle1.setBounds(70, 95, 150, 25);
+		JLabel bookTitle2 = new JLabel("The Book Thief");
+		bookTitle2.setBounds(70, 120, 150, 25);
+		JLabel bookTitle3 = new JLabel("Pride and Prejudice");
+		bookTitle3.setBounds(70, 145, 150, 25);
+		
+		JLabel bookAuthor1 = new JLabel("Madeline Miller");
+		bookAuthor1.setBounds(200, 95, 150, 25);
+		JLabel bookAuthor2 = new JLabel( "Markus Zusak");
+		bookAuthor2.setBounds(200, 120, 150, 25);
+		JLabel bookAuthor3 = new JLabel("Jane Austen");
+		bookAuthor3.setBounds(200, 145, 150, 25);
+		
+		libModulePanel.setLayout(null);
+		libModulePanel.add(libModuleText);
+		libModulePanel.add(bookIndex1);
+		libModulePanel.add(bookIndex2);
+		libModulePanel.add(bookIndex3);
+		libModulePanel.add(bookTitle1);
+		libModulePanel.add(bookTitle2);
+		libModulePanel.add(bookTitle3);
+		libModulePanel.add(bookAuthor1);
+		libModulePanel.add(bookAuthor2);
+		libModulePanel.add(bookAuthor3);
+		
+		libModuleFrame.setLocation(400, 100);
+		libModuleFrame.setSize(400, 300);
+		libModuleFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		libModuleFrame.setLayout(null);
+		libModuleFrame.setVisible(true);
+		libModuleFrame.add(libModulePanel);
+		libModuleFrame.add(libModuleText);
+		libModuleFrame.add(bookIndex1);
+		libModuleFrame.add(bookIndex2);
+		libModuleFrame.add(bookIndex3);
+		libModuleFrame.add(bookTitle1);
+		libModuleFrame.add(bookTitle2);
+		libModuleFrame.add(bookTitle3);
+		libModuleFrame.add(bookAuthor1);
+		libModuleFrame.add(bookAuthor2);
+		libModuleFrame.add(bookAuthor3);
 		
 	}
 	
