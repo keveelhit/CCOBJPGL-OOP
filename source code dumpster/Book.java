@@ -1,10 +1,16 @@
 package LibrarySystemLoginFeature;
 
-public class BookInformation {
+public class Book {
 
 	String name;
 	String author;
-	int copy;
+	String copy;
+	
+	public Book(String name, String author, String copy) {
+		this.name = name;
+		this.author = author;
+		this.copy = copy;
+	}
 	
 	public String getName() {
 		return name;
@@ -18,10 +24,10 @@ public class BookInformation {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public int getCopy() {
+	public String getCopy() {
 		return copy;
 	}
-	public void setCopy(int copy) {
+	public void setCopy(String copy) {
 		this.copy = copy;
 	} 
 	
