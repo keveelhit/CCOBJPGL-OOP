@@ -7,7 +7,7 @@ package InheritanceAndOverriding;
  * Date: May 22, 2023
  */
 
-// Derived class: Car
+// Derived Class: Car
 class Car extends Vehicle {
     private int numDoors;
 
