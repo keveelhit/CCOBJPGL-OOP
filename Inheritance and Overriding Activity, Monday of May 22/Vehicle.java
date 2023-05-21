@@ -7,7 +7,7 @@ package InheritanceAndOverriding;
  * Date: May 22, 2023
  */
 
-// Base class: Vehicle
+// Base Class: Vehicle
 class Vehicle {
     private double speed;
     private String color;
